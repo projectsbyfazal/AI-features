@@ -14,7 +14,6 @@ export default function GrammarPage() {
   const [lastReqtext, setlastReqtext] = useState(null);
 
   const canSubmit = text.trim().length > 0 && !loading;
-
   async function handleSubmit(e) {
     e.preventDefault();
     if (!canSubmit) return;
